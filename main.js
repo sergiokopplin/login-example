@@ -12,3 +12,17 @@ eyeButton.addEventListener('click', () => {
     }
     eyeButton.classList.toggle(onClass);
 });
+
+const forgotPassword = document.querySelector('#forgot-password');
+const formShow = 'forgot-my-password';
+const formType = document.querySelector('.login-form-container');
+
+forgotPassword.addEventListener('click', () => {
+    formType.classList.add(formShow);
+});
+
+const backForm = document.querySelector('#back');
+
+backForm.addEventListener('click', () => {
+    formType.classList.remove(formShow);
+});
