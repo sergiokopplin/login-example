@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <section class="login">
+      <div class="login-form-container">
+        <img src="imgs/logo.svg" alt="logo" />
+        <div class="login-form">
+          <div class="title">
+            <h1 class="page-title">Welcome to our system!</h1>
+            <p class="page-subtitle">Login with your user and password.</p>
+          </div>
+          <form>
+            <div class="input">
+              <label class="input-label" for="user">User</label>
+              <div class="text-field">
+                <input
+                  type="text"
+                  name="user"
+                  id="user"
+                  placeholder="name.lastname"
+                  class="custom-input"
+                />
+              </div>
+            </div>
+            <div class="input">
+              <label class="input-label" for="password">Password</label>
+              <div class="text-field">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder=""
+                  class="custom-input"
+                />
+                <button type="button" class="visibility" name="visibility">
+                  <img
+                    src="imgs/visibility-on.svg"
+                    alt="Visibility on"
+                    class="visibility-on"
+                  />
+                  <img
+                    src="imgs/visibility-off.svg"
+                    alt="Visibility off"
+                    class="visibility-off"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="button-group">
+              <button type="submit" class="button-primary button" id="submit">
+                Enter
+              </button>
+              <button
+                type="button"
+                class="button-secondary button"
+                id="forgot-password"
+              >
+                Forgot my password
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="forgot-my-password-form">
+          <div class="title">
+            <h1 class="page-title">Reset password</h1>
+            <p class="page-subtitle">
+              Enter your e-mail address to receive instructions for registering
+              a new password.
+            </p>
+          </div>
+          <form>
+            <div class="input">
+              <label class="input-label" for="email">Email</label>
+              <div class="text-field">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="name.lastname@company.com"
+                  class="custom-input"
+                />
+              </div>
+            </div>
+            <div class="button-group">
+              <button type="submit" class="button-primary button" id="submit">
+                Reset password
+              </button>
+              <button type="button" class="button-secondary button" id="back">
+                Back
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
