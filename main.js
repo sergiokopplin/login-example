@@ -13,16 +13,16 @@ eyeButton.addEventListener('click', () => {
     eyeButton.classList.toggle(onClass);
 });
 
-const forgotPassword = document.querySelector('#forgot-password');
-const formShow = 'forgot-my-password';
-const formType = document.querySelector('.login-form-container');
+const buttonForgotPassword = document.querySelector('#forgot-password');
+const formClass = 'forgot-my-password';
+const formContainer = document.querySelector('.login-form-container');
 
-forgotPassword.addEventListener('click', () => {
-    formType.classList.add(formShow);
+buttonForgotPassword.addEventListener('click', () => {
+    formContainer.classList.add(formClass);
 });
 
 const backForm = document.querySelector('#back');
 
 backForm.addEventListener('click', () => {
-    formType.classList.remove(formShow);
+    formContainer.classList.remove(formClass);
 });
